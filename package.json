@@ -1,0 +1,24 @@
+{
+  "description": "An example using GraphQL-Voyager",
+  "scripts": {
+    "start": "webpack serve --config webpack.config.js",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "graphql": "14.2.1",
+    "graphql-voyager": "^1.0.0-rc.31",
+    "isomorphic-fetch": "^2.2.1",
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "copy-webpack-plugin": "^5.1.2",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
