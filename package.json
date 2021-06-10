@@ -1,11 +1,16 @@
 {
   "description": "An example using GraphQL-Voyager",
   "scripts": {
+    "fetch-schema-local": "graphql-js-schema-fetch http://localhost:8082 > ./schema.json",
+    "fetch-schema-dev": "graphql-js-schema-fetch https://graph-dev.yourwelcome.com > ./schema.json",
+    "fetch-schema-staging": "graphql-js-schema-fetch https://graph-staging.yourwelcome.com > ./schema.json",
+    "fetch-schema-prod": "graphql-js-schema-fetch https://graph.yourwelcome.com > ./schema.json",
     "start": "webpack serve --config webpack.config.js",
     "build": "webpack"
   },
   "dependencies": {
     "graphql": "14.2.1",
+    "graphql-js-schema-fetch": "^1.1.2",
     "graphql-voyager": "^1.0.0-rc.31",
     "isomorphic-fetch": "^2.2.1",
     "react": "16.8.6",
