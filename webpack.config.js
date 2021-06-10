@@ -4,7 +4,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   devtool: "cheap-source-map",
-
+  mode: process.env.NODE_ENV || "production",
   performance: {
     hints: false,
   },

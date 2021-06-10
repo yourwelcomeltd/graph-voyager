@@ -6,6 +6,7 @@
     "fetch-schema-staging": "graphql-js-schema-fetch https://graph-staging.yourwelcome.com > ./schema.json",
     "fetch-schema-prod": "graphql-js-schema-fetch https://graph.yourwelcome.com > ./schema.json",
     "start": "webpack serve --config webpack.config.js",
+    "dev": "NODE_ENV=development webpack serve --config webpack.config.js",
     "build": "webpack"
   },
   "dependencies": {
